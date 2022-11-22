@@ -1,0 +1,20 @@
+{
+    "name": "weboptic/laravel-textplode",
+    "description": "Textplode channel for user with Laravel",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Weboptic\\Textplode\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Shane Deakin",
+            "email": "shane@weboptic.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^8.0"
+    }
+}
