@@ -1,6 +1,7 @@
 {
     "name": "weboptic/laravel-textplode",
     "description": "Textplode channel for user with Laravel",
+    "license": "MIT",
     "type": "library",
     "autoload": {
         "psr-4": {
