@@ -4,9 +4,9 @@ namespace Weboptic\Textplode;
 
 class Message
 {
-	private $mergeData = [];
-	private $message;
-	private $from;
+	protected $mergeData = [];
+	protected $message;
+	protected $from;
 
 	public function send(): Response
     {
