@@ -8,7 +8,9 @@ class Request
 
 	public static function make($method, $data = []): Response
     {
-		$data = array_merge($data, ['api_key' => config('services.textplode.apiKey')]);
+		if (! isset($data['api_key'])) {
+            $data['api_key'] = config('services.textplode.apiKey');
+        }
 
 		$curl = curl_init(self::$baseUrl . $method);
 		curl_setopt($curl, CURLOPT_POST, 1);
